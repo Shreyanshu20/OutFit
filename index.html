@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/icon.png" type="image/x-icon" />
+    <title>OutFit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section id="navbar">
+        <div class="logo">
+            <a href="./index.html">
+                <img src="./assets/lo.png" alt=""></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="./src/shop.html">Shop</a></li>
+                <li><a href="./src/about.html">About</a></li>
+                <li><a href="./src/contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="cart">
+            <a href="./src/cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <div class="mini-menu" id="mini-menu" onclick="miniMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="cross">
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="hero">
+
+        <div class="hero-text">
+            <h1>Welcome to Our Fashion Store</h1>
+            <h2>Get the best outfit for you</h2>
+            <a href="./src/shop.html"><button>Shop Now</button></a>
+        </div>
+
+    </section>
+
+    <section id="features">
+        <div class="feature-cards">
+            <div class="card">
+                <i class="fa fa-truck"></i>
+                <h3>Free Shipping</h3>
+                <p>Enjoy free shipping on all orders, no minimum purchase required. </p>
+            </div>
+            <div class="card">
+                <i class="fa fa-credit-card"></i>
+                <h3>Secure Payment</h3>
+                <p>Your transactions are protected with advanced encryption technology.</p>
+            </div>
+            <div class="card">
+                <i class="fas fa-check-circle"></i>
+                <h3>7 Days Return Policy</h3>
+                <p>We provide 7 days free return policy.</p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-arrows-rotate"></i>
+                <h3>Easy Exchange Policy </h3>
+                <p>We offer hassle free exchange policy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="trend">
+        <div class="trend-text">
+            <h2>Trending Now</h2>
+        </div>
+        <div class="trend-cards">
+            <div class="card" onclick="window.location.href='./src/shop.html'">
+                <img src="./assets/p_img23.png" alt="">
+                <h3>Kids Wear Top</h3>
+                <p>$79</p>
+                <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+            <div class="card" onclick="window.location.href='./src/shop.html'">
+                <img src="./assets/shoes.jpg" alt="">
+                <h3>Stylish Shoes</h3>
+                <p>$199</p>
+                <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+            <div class="card" onclick="window.location.href='./src/shop.html'">
+                <img src="./assets/watc.jpg" alt="">
+                <h3>Elegant Watch</h3>
+                <p>$299</p>
+                <button><i class="fa fa-shopping-cart"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="discount-boxes">
+        <div class="discount-box">
+            <div class="box b1">
+                <h2>Upcoming season</h2>
+                <h3>Get ready for the latest trends and styles in the upcoming season.</h3>
+                <a href="./src/shop.html"><button>Shop Now</button></a>
+            </div>
+            <div class="box b2">
+                <h2>End of the season</h2>
+                <h3>Enjoy up to 70% off on selected items as we clear out the season's stock.</h3>
+                <a href="./src/shop.html"><button>Shop Now</button></a>
+            </div>
+            <div class="box b3">
+                <h2>FootWear Collection</h2>
+                <h3>Discover our exclusive footwear collection with up to 50% off.</h3>
+                <a href="./src/shop.html"><button>Shop Now</button></a>
+            </div>
+            <div class="box b4">
+                <h2>Mens Wear</h2>
+                <h3>Explore our latest collection of men's wear with up to 40% off.</h3>
+                <a href="./src/shop.html"><button>Shop Now</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="special">
+        <div class="special-text">
+            <h2>Special Discount: Get 50% off on your first purchase!</h2>
+            <a href="./src/shop.html"><button>Shop Now</button></a>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="footer-text">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

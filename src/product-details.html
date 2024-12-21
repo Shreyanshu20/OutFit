@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icon.png" type="image/x-icon" />
+    <title>OutFit</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <section id="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../assets/lo.png" alt=""></a>
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="cart">
+            <a href="./cart.html"><i class="fa fa-shopping-cart"></i></a>
+            <div class="mini-menu" id="mini-menu" onclick="miniMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <div class="cross">
+                <i class="fas fa-times" onclick="closeMenu()"></i>
+            </div>
+        </div>
+    </section>
+
+    <button class="back-btn" onclick="goBack()"><i class="fa fa-arrow-left"></i> Back to Products</button>
+    <div id="details">
+        <!-- <h1>Product Details</h1> -->
+        <div class="product-details">
+            <div class="pro-img">
+                <img id="productImage" src="" alt="">
+            </div>
+            <div class="pro-detail">
+                <h3 id="productName"></h3>
+                <div class="star">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3 id="productPrice"></h3>
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>&nbsp;&nbsp;&nbsp;&nbsp;
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+                <div class="hr"></div>
+                <h4>Description</h4>
+                <p class="productDescription">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id laborum est,
+                    error assumenda in, hic aspernatur eos sapiente voluptatum vel et quod doloribus maiores repellat ex
+                    impedit, incidunt ipsum inventore ea.</p>
+
+                <button onclick="addToCartFromDetails()">Add to Cart</button>
+                <div class="hr"></div>
+                <div class="return">
+                    <p>100% Original product.</p>
+                    <p>Cash on delivery is available on this product.</p>
+                    <p>Easy return and exchange policy within 7 days.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="footer">
+        <div class="footer-text">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Get the latest updates on new products and upcoming sales</p>
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </section>
+
+    <script src="../app.js"></script>
+</body>
+
+</html>
