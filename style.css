@@ -1448,7 +1448,7 @@ p {
     #hero {
         background: url(./assets/heroo2.png);
         background-size: cover;
-        height: 60vh;
+        height: 55vh;
     }
 
     #hero .hero-text {
@@ -1487,7 +1487,7 @@ p {
     }
 
     #trend {
-        height: 145vh;
+        height: 135vh;
         padding: 1rem 1rem;
     }
 
@@ -1639,18 +1639,18 @@ p {
         width: 100%;
     }
 
-    #about{
+    #about {
         display: flex;
         flex-direction: column;
     }
 
-    #contact .contact-form{
+    #contact .contact-form {
         height: 110vh;
         display: flex;
         flex-direction: column;
     }
 
-    #contact .contact-form img{
+    #contact .contact-form img {
         height: 45%;
     }
 
