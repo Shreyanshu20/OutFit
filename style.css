@@ -1466,6 +1466,7 @@ p {
     }
 
     #features {
+        height: 40vh;
         padding: 0rem 0.5rem;
     }
 
@@ -1487,7 +1488,7 @@ p {
     }
 
     #trend {
-        height: 135vh;
+        height: 130vh;
         padding: 1rem 1rem;
     }
 
@@ -1519,7 +1520,7 @@ p {
     }
 
     #discount-boxes {
-        height: 150vh;
+        height: 140vh;
     }
 
     #discount-boxes .discount-box {
